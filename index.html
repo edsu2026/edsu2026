@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal</title>
+    <title>Home de Pacientes</title>
     <link rel="stylesheet" href="src/frame.css">
     <link rel="stylesheet" href="src/images.css">
     <link rel="stylesheet" href="src/button.css">
@@ -12,14 +12,14 @@
 <body>
     <div class="container">
         <header class="row frame justify-content-between">
-            <div class="col-6 d-flex gap-2 align-items-center">
+            <div class="col-12 col-md-6 d-flex gap-2 align-items-center">
                 <span><a href="#"><img src="assets/imgs/profile_icon.png" class="profile-icon" alt="icon"></a></span>
                 <span>
                     <p style="margin: 0;">USERNAME</p>
                     <p style="margin: 0;">5776****</p>
                 </span>
             </div>
-            <div class="col-6 d-flex gap-2 align-items-center justify-content-end">
+            <div class="col-12 col-md-6 d-flex flex-wrap gap-2 align-items-center justify-content-md-end mt-2 mt-md-0">
                 <span><a href="encuestas.html" class="button button-default button-option">ENCUESTAS</a></span>
                 <span><a href="preguntas.html" class="button button-default button-option">PREGUNTAS FRECUENTES</a></span>
                 <span><a href="documentos.html" class="button button-default button-option">DOCUMENTOS</a></span>
@@ -32,7 +32,7 @@
                         <img src="assets/camp/campaign_image1.jpg" class="card-img-top">
                     </div>
                     <div class="card-body">
-                        <h3 class="h4">Campaña</h3>
+                        <h3 class="h4">Campaña de vacunacion </h3>
                         <hr>
                         <p>PARRAFO</p>
                     </div>
@@ -67,34 +67,36 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 frame"> <!--Video tutoriales-->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ptk5fsNLW5I" frameborder="0" allowfullscreen></iframe>
-                <hr>
-            </div>
+           <div class="col-12 frame">
+                 <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/ptk5fsNLW5I" allowfullscreen></iframe>
+                </div>
+            <hr>
+        </div>
         </main>
-        <footer class="row frame justify-content-center" style="text-align: center;">
-            <h3>CONTACTOS</h3>
-            <div class="col-8 d-flex justify-content-between">
-                <section class="col-3">
-                    <h4>Desarrolladores</h4>
-                    <hr>
-                    <div class="footer-section-body">
-                        <span>
-                            <p>DEV 1</p>
-                        </span>
-                    </div>
-                </section>
-                <section class="col-3">
-                    <h4>Trabajadores</h4>
-                    <hr>
-                    <div class="footer-section-body">
-                        <span>
-                            <p>Trabajador 1</p>
-                        </span>
-                    </div>
-                </section>
+<footer class="row frame justify-content-center" style="text-align: center;">
+    <h3>CONTACTOS</h3>
+    <div class="col-12 col-md-8 d-flex flex-column flex-md-row justify-content-between gap-3">
+        <section class="col-12 col-md-3">
+            <h4>Desarrolladores</h4>
+            <hr>
+            <div class="footer-section-body">
+                <span>
+                    <p>DEV 1</p>
+                </span>
             </div>
-        </footer>
+        </section>
+        <section class="col-12 col-md-3">
+            <h4>Trabajadores</h4>
+            <hr>
+            <div class="footer-section-body">
+                <span>
+                    <p>Trabajador 1</p>
+                </span>
+            </div>
+        </section>
+    </div>
+</footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
