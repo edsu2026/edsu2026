@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home de Pacientes</title>
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="assets/imgs/icon/favicon.png">
     <link rel="stylesheet" href="src/frame.css">
     <link rel="stylesheet" href="src/images.css">
     <link rel="stylesheet" href="src/button.css">
@@ -19,60 +20,37 @@
                     <p style="margin: 0;">5776****</p>
                 </span>
             </div>
-            <div class="col-12 col-md-6 d-flex flex-wrap gap-2 align-items-center justify-content-md-end mt-2 mt-md-0">
-                <span><a href="encuestas.html" class="button button-default button-option">ENCUESTAS</a></span>
+                <div class="col-12 col-md-6 d-flex flex-wrap gap-2 align-items-center justify-content-md-end mt-2 mt-md-0">
                 <span><a href="preguntas.html" class="button button-default button-option">PREGUNTAS FRECUENTES</a></span>
-                <span><a href="documentos.html" class="button button-default button-option">DOCUMENTOS</a></span>
             </div>
         </header>
         <main class="row" id="main">
-            <div class="col-12 frame d-flex justify-content-between"> <!--Campañas de salud-->
-                <div class="card col-3.5">
-                    <div class="card-header">
-                        <img src="assets/camp/campaign_image1.jpg" class="card-img-top">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="h4">Campaña de vacunacion </h3>
-                        <hr>
-                        <p>PARRAFO</p>
-                    </div>
-                    <div class="card-footer">
-                        <p class="text-muted">Texto footer</p>
-                    </div>
-                </div>
-                <div class="card col-3.5">
-                    <div class="card-header">
-                        <img src="assets/camp/campaign_image1.jpg" class="card-img-top">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="h4">Campaña</h3>
-                        <hr>
-                        <p>PARRAFO</p>
-                    </div>
-                    <div class="card-footer">
-                        <p class="text-muted">Texto footer</p>
-                    </div>
-                </div>
-                <div class="card col-3.5">
-                    <div class="card-header">
-                        <img src="assets/camp/campaign_image1.jpg" class="card-img-top">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="h4">Campaña</h3>
-                        <hr>
-                        <p>PARRAFO</p>
-                    </div>
-                    <div class="card-footer">
-                        <p class="text-muted">Texto footer</p>
-                    </div>
+            <div class="col-12">
+                <!--
+                    Contenedor de botones principales de la home.
+                    Usa Bootstrap para centrar y distribuir los botones.
+                    En móvil se apilan verticalmente; en desktop van uno al lado del otro.
+                -->
+                <div class="home-actions d-flex flex-column flex-md-row justify-content-center align-items-stretch gap-3 gap-md-4 mt-4 mt-md-5">
+                    <!-- Botón de encuestas -->
+                    <a href="encuestas.html" class="home-action-btn btn btn-lg w-100 w-md-auto d-flex align-items-center justify-content-center text-center">
+                        <span class="me-2">📝</span>
+                        <span>ENCUESTAS</span>
+                    </a>
+
+                    <!-- Botón de documentos -->
+                    <a href="documentos.html" class="home-action-btn btn btn-lg w-100 w-md-auto d-flex align-items-center justify-content-center text-center">
+                        <span class="me-2">📄</span>
+                        <span>DOCUMENTOS</span>
+                    </a>
                 </div>
             </div>
-           <div class="col-12 frame">
+            <!--  <div class="col-8 frame">
                  <div class="ratio ratio-16x9">
                     <iframe src="https://www.youtube.com/embed/ptk5fsNLW5I" allowfullscreen></iframe>
                 </div>
             <hr>
-        </div>
+        </div> -->
         </main>
 <footer class="row frame justify-content-center" style="text-align: center;">
     <h3>CONTACTOS</h3>
